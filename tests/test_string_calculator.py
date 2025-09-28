@@ -24,7 +24,7 @@ def test_negative_raises_single():
         add("1,-2,3")
     assert "negative numbers not allowed -2" in str(exc.value)
 
-# def test_negative_raises_multiple():
-#     with pytest.raises(ValueError) as exc:
-#         add("1,-2,-5,3")
-#     assert "negative numbers not allowed -2,-5" in str(exc.value)
+def test_negative_raises_multiple():
+    with pytest.raises(ValueError) as exc:
+        add("1,-2,-5,3")
+    assert "negative numbers not allowed -2,-5" in str(exc.value)
