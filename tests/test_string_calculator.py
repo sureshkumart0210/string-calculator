@@ -10,8 +10,8 @@ def test_single_number_returns_value():
 def test_two_numbers_comma_separated():
     assert add("1,5") == 6
 
-# def test_many_numbers():
-#     assert add("1,2,3,4,5") == 15
+def test_many_numbers():
+    assert add("1,2,3,4,5") == 15
 
 # def test_newlines_between_numbers():
 #     assert add("1\n2,3") == 6
